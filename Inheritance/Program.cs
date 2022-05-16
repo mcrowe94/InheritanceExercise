@@ -6,6 +6,35 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            var myBird = new Bird();
+            myBird.WingColor = "Blue";
+            myBird.CanFly = true;
+            myBird.willMigrate = true;
+            myBird.BeakLength = 3.5;
+
+            var lizard = new Reptile()
+            {
+                IsColdBlooded = true,
+                IsScaly = true,
+                Habitat = "swamp",
+                CanGrowTail = true
+            };
+
+            var myAnimals = new Animal[] {myBird, lizard};
+
+            foreach(var Animal in myAnimals)
+            {
+                Console.WriteLine($"Alive:{Animal.IsAlive}");
+                Console.WriteLine($"Age:{Animal.Age} years old");
+                Console.WriteLine($"It has {Animal.LegCount} legs");
+                Console.WriteLine($"It lives by {Animal.LandSeaAir}");
+                Console.WriteLine($"");
+            }   
+
+            
+
+
+
             // TODO Be sure to follow best practice when creating your classes
 
             // Create a class Animal
@@ -28,6 +57,8 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
