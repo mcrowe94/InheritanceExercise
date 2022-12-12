@@ -20,7 +20,7 @@ namespace Inheritance
                 CanGrowTail = true
             };
 
-            var myAnimals = new Animal[] {myBird, lizard};
+            var myAnimals = new Animal[] {myBird, lizard}; //instantiates animal - made an array of animals
 
             Console.WriteLine("Reptile & Bird!");
             Console.WriteLine("---------------------");
