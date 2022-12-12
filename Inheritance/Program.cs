@@ -22,6 +22,9 @@ namespace Inheritance
 
             var myAnimals = new Animal[] {myBird, lizard};
 
+            Console.WriteLine("Reptile & Bird!");
+            Console.WriteLine("---------------------");
+            Console.WriteLine();
             foreach(var Animal in myAnimals)
             {
                 Console.WriteLine($"Alive:{Animal.IsAlive}");
